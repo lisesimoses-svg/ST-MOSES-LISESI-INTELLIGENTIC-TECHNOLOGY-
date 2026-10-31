@@ -1,0 +1,26 @@
+ST MOSES AI — TOLEO LENYE MUUNGANISHO WA API
+
+MAHITAJI
+- Seva yenye Node.js 20 au zaidi.
+- OpenAI API key na malipo/credits za API zilizowekwa kwenye akaunti ya API.
+
+KUENDESHA KWENYE KOMPYUTA
+1. Fungua folda hii kwenye kompyuta yenye Node.js 20+.
+2. Weka OPENAI_API_KEY kwenye mazingira ya seva (si kwenye HTML).
+   Linux/macOS: export OPENAI_API_KEY="API_KEY_YAKO"
+   PowerShell: $env:OPENAI_API_KEY="API_KEY_YAKO"
+3. Endesha: npm start
+4. Fungua: http://localhost:3000
+
+KUWEKA MTANDAONI
+- Pakia folda hii kwenye huduma inayounga mkono Node.js.
+- Weka Build/Start command: npm start
+- Weka Environment Variable: OPENAI_API_KEY (thamani yake iwe API key yako).
+- Hiari: OPENAI_MODEL=gpt-6-astra
+- Fungua URL ya huduma baada ya deployment.
+
+USALAMA
+- Usimtumie mtu API key yako kwa WhatsApp au kwenye mazungumzo.
+- Usiweke API key ndani ya index.html, GitHub ya umma, au picha za skrini.
+- OpenAI API hutumia bili tofauti na usajili wa ChatGPT.
+- Huu ni msingi wa kuunganisha; bado haujapakiwa kwenye hosting na hautafanya kazi mtandaoni hadi uwekwe kwenye seva na API key iwekwe.
