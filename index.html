@@ -97,5 +97,35 @@ document.querySelectorAll('.suggestion').forEach(b=>b.addEventListener('click',(
 document.getElementById('newChat').addEventListener('click',()=>{chat.innerHTML='';welcome.style.display='block';suggestions.style.display='grid';input.value='';input.focus()});
 document.querySelectorAll('.navitem').forEach(n=>n.addEventListener('click',()=>{document.querySelectorAll('.navitem').forEach(x=>x.classList.remove('active'));n.classList.add('active');document.getElementById('modeTitle').textContent=titles[n.dataset.mode];input.placeholder=n.dataset.mode==='education'?'Uliza swali la masomo...':n.dataset.mode==='writing'?'Unataka kuandika nini?...':n.dataset.mode==='business'?'Uliza kuhusu biashara au usimamizi...':'Andika swali lako hapa...'}));
 </script>
+<!-- ST MOSES NEW PERSONAL LOGO -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const newLogo =
+  "a_polished_high_contrast_professional_circular_e.png";
+
+  document.querySelectorAll("img").forEach(function(img) {
+
+    const details = [
+      img.id,
+      img.className,
+      img.alt,
+      img.getAttribute("src")
+    ].join(" ").toLowerCase();
+
+    if (
+      details.includes("logo") ||
+      details.includes("brand") ||
+      details.includes("icon-192")
+    ) {
+      img.src = newLogo;
+      img.alt = "ST MOSES ST-MIS Logo";
+      img.style.objectFit = "contain";
+    }
+
+  });
+
+});
+</script>
 </body>
 </html>
