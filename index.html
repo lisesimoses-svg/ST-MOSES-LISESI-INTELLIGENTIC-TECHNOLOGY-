@@ -127,5 +127,56 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
+ <!-- NEW ST MOSES PERSONAL LOGO -->
+<script>
+(function () {
+
+  const newLogo =
+  "./a_polished_high_contrast_professional_circular_e.png";
+
+  function updateLogo() {
+
+    const images = document.querySelectorAll(
+      'img[id*="logo" i], ' +
+      'img[class*="logo" i], ' +
+      'img[alt*="logo" i], ' +
+      'img[src*="logo" i], ' +
+      'img[src*="icon-192" i], ' +
+      '.brand img, .school-logo img'
+    );
+
+    images.forEach(function(img) {
+      img.src = newLogo;
+      img.removeAttribute("srcset");
+      img.alt = "ST MOSES School Management System";
+      img.style.objectFit = "contain";
+    });
+
+    const containers = document.querySelectorAll(
+      '[id*="logo" i]:not(img), ' +
+      '[class*="logo" i]:not(img)'
+    );
+
+    containers.forEach(function(el) {
+      el.style.backgroundImage = 'url("' + newLogo + '")';
+      el.style.backgroundSize = "contain";
+      el.style.backgroundPosition = "center";
+      el.style.backgroundRepeat = "no-repeat";
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", updateLogo);
+  } else {
+    updateLogo();
+  }
+
+  new MutationObserver(updateLogo).observe(
+    document.documentElement,
+    { childList: true, subtree: true }
+  );
+
+})();
+</script>
 </body>
 </html>
